@@ -3,7 +3,14 @@
     <body>
         <link rel="stylesheet" href="newweb.css">
         <script src="newwebsite.js">
-        </script>    
+        </script>   
+        <script>
+            $(document).ready(function(){ 
+                $("button").click(function(){ 
+                    $("#divContent").load("https://api.github.com/repositories/2126244/commits?per_page=1"); 
+                }); 
+            }); 
+        </script> 
     </body>
     <h1>This is a heading</h1>
     <p id="demo" onclick="myFunction()">This is a paragraph.</p>
