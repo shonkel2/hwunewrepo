@@ -15,12 +15,3 @@ script.onload = function()
 
   // console.log( initCookieConsent );
 }
-console.log('ready');
-script.draggable = true; // works
-console.log('script draggable:', script.getAttribute('draggable') ); // works
-
-script['blocking'] = 'none'; // works
-console.log('script blocking:', script.getAttribute('blocking')); // works
-
-script['data-message'] = 'test'; // non-standard so doesn't work
-console.log('script message:', script.getAttribute('data-message'));
