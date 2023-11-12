@@ -9,6 +9,9 @@ var $loadbutton = $('<button>Load</button>').appendTo('body');
 var $savebutton = $('<button>Save</button>').appendTo('body');
 var $textarea   = $(document.createElement('textarea')).appendTo('body');
 $textarea.val( 'enter text' );
+$savebutton.click(function() {
+  console.log( "Handler for .click() called." );
+});
 </script>
 <div>
 <h1>My First Heading</h1>
